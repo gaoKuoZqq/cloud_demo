@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.guoyicap.micro.config.user.mapper.CompanyMapper">
+	<resultMap type="com.guoyicap.micro.config.user.model.Company" id="CompanyMap">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="legalPerson" column="legal_person"/>
+	</resultMap>
+	
+	<select id="findById" parameterType="integer" resultMap="CompanyMap">
+		select * from tb_test_company where id = #{id}
+	</select>
+	
+	<select id="getPageList" parameterType="map" resultMap="CompanyMap">
+		select * from tb_test_company where 1 = 1 
+		<if test="name != null and name != ''">
+			and name like concat("%", #{name}, "%")
+		</if>
+		<if test="legalPerson != null and legalPerson != ''">
+			and legal_person like concat("%", #{legalPerson}, "%")
+		</if>
+	</select>
+	
+	<delete id="deleteById" parameterType="com.guoyicap.micro.config.user.model.Company">
+		delete from tb_test_company where id = #{id}
+	</delete>
+	
+	<update id="update" parameterType="com.guoyicap.micro.config.user.model.Company">
+		update tb_test_company
+		<set>
+			<if test="name != null and name != ''">
+				name = #{name},
+			</if>
+			<if test="legalPerson != null and legalPerson != ''">
+				legal_person = #{legalPerson},
+			</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<insert id="insert" parameterType="com.guoyicap.micro.config.user.model.Company">
+		insert into tb_test_company(name, legal_person) values(#{name}, #{legalPerson})
+	</insert>
+</mapper>

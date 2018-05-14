@@ -1,0 +1,5 @@
+2018-05-09 14:12:11 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------
+2018-05-09 14:12:11 ERROR c.g.m.r.z.comment.filter.LogFilter - info:{X-Span-Name=http:/micro-user/company/findById, x-forwarded-host=localhost:10000, x-forwarded-proto=http, X-B3-SpanId=404860d740772c2e, x-forwarded-prefix=/micro-user, X-B3-ParentSpanId=e7f31aad18dec035, X-B3-Sampled=0, x-forwarded-port=10000, X-B3-TraceId=add053f244a6a094, x-forwarded-for=127.0.0.1}
+2018-05-09 14:12:11 ERROR c.g.m.r.z.comment.filter.LogFilter - status:500
+2018-05-09 14:12:11 ERROR c.g.m.r.z.comment.filter.LogFilter - params:1
+2018-05-09 14:12:11 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------

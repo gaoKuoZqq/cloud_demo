@@ -1,0 +1,15 @@
+2018-05-09 14:17:18 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------
+2018-05-09 14:17:18 ERROR c.g.m.r.z.comment.filter.LogFilter - info:{X-Span-Name=http:/micro-user/company/update, x-forwarded-host=localhost:10000, x-forwarded-proto=http, X-B3-SpanId=a7697aa9a46dd94f, x-forwarded-prefix=/micro-user, X-B3-ParentSpanId=28bb1361c2b08eb2, X-B3-Sampled=0, x-forwarded-port=10000, X-B3-TraceId=935ae496f8229565, x-forwarded-for=127.0.0.1}
+2018-05-09 14:17:18 ERROR c.g.m.r.z.comment.filter.LogFilter - status:500
+2018-05-09 14:17:18 ERROR c.g.m.r.z.comment.filter.LogFilter - params:{"id":2,"name":"公司002","legalPerson":null}
+2018-05-09 14:17:18 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------
+2018-05-09 14:17:57 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------
+2018-05-09 14:17:57 ERROR c.g.m.r.z.comment.filter.LogFilter - info:{X-Span-Name=http:/micro-user/company/update, x-forwarded-host=localhost:10000, x-forwarded-proto=http, X-B3-SpanId=7302456ee1e26996, x-forwarded-prefix=/micro-user, X-B3-ParentSpanId=55d0ae7d3e38a0b2, X-B3-Sampled=0, x-forwarded-port=10000, X-B3-TraceId=a3cbe87575ef43a2, x-forwarded-for=127.0.0.1}
+2018-05-09 14:17:57 ERROR c.g.m.r.z.comment.filter.LogFilter - status:500
+2018-05-09 14:17:57 ERROR c.g.m.r.z.comment.filter.LogFilter - params:{"id":2,"name":"公司002","legalPerson":null}
+2018-05-09 14:17:57 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------
+2018-05-09 14:17:58 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------
+2018-05-09 14:17:58 ERROR c.g.m.r.z.comment.filter.LogFilter - info:{X-Span-Name=http:/micro-user/company/update, x-forwarded-host=localhost:10000, x-forwarded-proto=http, X-B3-SpanId=1f58bf93083ebd98, x-forwarded-prefix=/micro-user, X-B3-ParentSpanId=4096841b61fafb38, X-B3-Sampled=0, x-forwarded-port=10000, X-B3-TraceId=75fa71c72c528594, x-forwarded-for=127.0.0.1}
+2018-05-09 14:17:58 ERROR c.g.m.r.z.comment.filter.LogFilter - status:500
+2018-05-09 14:17:58 ERROR c.g.m.r.z.comment.filter.LogFilter - params:{"id":2,"name":"公司002","legalPerson":null}
+2018-05-09 14:17:58 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------

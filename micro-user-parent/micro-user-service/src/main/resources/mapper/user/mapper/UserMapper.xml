@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.guoyicap.micro.config.user.mapper.UserMapper">
+	<resultMap type="com.guoyicap.micro.config.user.model.User" id="UserMap">
+		<id property="id" column="id"/>
+		<result property="username" column="username"/>
+		<result property="password" column="password"/>
+		<result property="salt" column="salt"/>
+		<result property="state" column="state"/>
+		<collection property="roles" javaType="ArrayList"  ofType="com.guoyicap.micro.config.user.model.Role">
+			<result property="name" column="role_name"></result>
+			<collection property="rules" javaType="ArrayList"  ofType="com.guoyicap.micro.config.user.model.Rule">
+				<result property="name" column="rule_name"></result>
+				<result property="rule" column="rule"></result>
+			</collection>
+		</collection>
+	</resultMap>
+	
+	<select id="findByUsername" parameterType="string" resultMap="UserMap">
+		SELECT
+		  user.id id,
+		  user.username,
+		  user.password,
+		  user.salt,
+		  role.name role_name,
+		  rule.name rule_name,
+		  rule.rule rule
+		FROM
+			USER
+		LEFT JOIN user_role ON USER .id = user_role.user_id
+		LEFT JOIN role ON role.id = user_role.role_id
+		LEFT JOIN role_rule ON role_rule.role_id = role.id
+		LEFT JOIN rule on role_rule.rule_id = rule.id
+		WHERE user.username = #{username}
+	</select>
+	
+</mapper>

@@ -1,0 +1,10 @@
+2018-05-09 14:33:44 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------
+2018-05-09 14:33:44 ERROR c.g.m.r.z.comment.filter.LogFilter - info:/micro-user/company/update
+2018-05-09 14:33:44 ERROR c.g.m.r.z.comment.filter.LogFilter - status:500
+2018-05-09 14:33:44 ERROR c.g.m.r.z.comment.filter.LogFilter - params:{"id":2,"name":"公司002","legalPerson":null}
+2018-05-09 14:33:44 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------
+2018-05-09 14:33:45 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------
+2018-05-09 14:33:45 ERROR c.g.m.r.z.comment.filter.LogFilter - info:/micro-user/company/update
+2018-05-09 14:33:45 ERROR c.g.m.r.z.comment.filter.LogFilter - status:500
+2018-05-09 14:33:45 ERROR c.g.m.r.z.comment.filter.LogFilter - params:{"id":2,"name":"公司002","legalPerson":null}
+2018-05-09 14:33:45 ERROR c.g.m.r.z.comment.filter.LogFilter - -----------------------------------
